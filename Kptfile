@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: Anthos Self Service
+upstream:
+    type: git
+    git:
+        commit: c04f7422718cd2bd85e1e0f424f8f478df75ee2b
+        repo: git@github.com:phanimarupaka/anthos-environ-samples
+        directory: /
+        ref: master

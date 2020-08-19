@@ -1,0 +1,14 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: Anthos Self Service for Cloud Run
+openAPI:
+  definitions:
+    io.k8s.cli.setters.membership:
+      type: array
+      x-k8s-cli:
+        setter:
+          name: membership
+          value: ""
+          listValues:
+          - gke-cluster-1
